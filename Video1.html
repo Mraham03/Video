@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Roulette</title>
+    <script>
+        function redirectToRandomVideo() {
+            const videos = [
+                "https://youtu.be/lQgLoDwS8P0",
+                "https://youtu.be/64fooj5g7tU",
+                "https://youtu.be/ZNCB5vbb0uM"
+            ];
+            const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+            window.location.href = randomVideo;
+        }
+    </script>
+</head>
+<body onload="redirectToRandomVideo()">
+    <h1>Spinning the roulette wheel...</h1>
+</body>
+</html>
